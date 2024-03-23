@@ -1,0 +1,22 @@
+﻿<Window x:Class="Semana2Rudas.ReporteSalida"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Semana2Rudas"
+        mc:Ignorable="d"
+        Title="ReporteSalida" Height="450" Width="800">
+    <Grid Margin="20">
+        <DataGrid x:Name="listasalidas" AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Fecha" Binding="{Binding Fecha}" Width="*"/>
+                <DataGridTextColumn Header="Peso" Binding="{Binding Peso}" Width="*"/>
+                <DataGridTextColumn Header="Tipo Auto" Binding="{Binding TipoAuto}" Width="*"/>
+                <DataGridTextColumn Header="Nombre Transportista" Binding="{Binding NombreTransportista}" Width="*"/>
+                <DataGridTextColumn Header="Peso Ingreso" Binding="{Binding PesoIngreso}" Width="*"/>
+                <DataGridTextColumn Header="Peso Salida" Binding="{Binding PesoSalida}" Width="*"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+    </Grid>
+</Window>
